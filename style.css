@@ -1,0 +1,137 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+:root {
+  --colorDark1: #112d4e;
+  --colorDark2: #3f72af;
+  --colorLight3: #dbe2ef;
+}
+
+body {
+  background-color: var(--colorLight3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 600px;
+  color: darkslategray;
+  font-weight: 900;
+  background-color: rgba(95, 158, 160, 0.925);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  letter-spacing: 1.5px;
+}
+
+.tabContainer {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 1rem;
+  background-color: rgba(47, 79, 79, 0.514);
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+
+.tab {
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+}
+
+.currentTab {
+  text-decoration: underline;
+}
+
+.formContainer {
+  display: none;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.formContainer.active {
+  display: flex;
+}
+
+.formContainer input {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: none;
+  background-color: darkgray;
+  color: white;
+}
+
+.formContainer .btn {
+  background-color: rgba(47, 79, 79, 0.514);
+  border: none;
+  padding: 0.5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.subContainer {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  /* gap: 1rem; */
+}
+
+.subContainer.active {
+  display: flex;
+}
+
+.parameterContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.parameter {
+  background-color: rgba(255, 255, 255, 0.25);
+  padding: 1rem;
+  border-radius: 10px;
+  width: 120px;
+  text-align: center;
+}
+
+.parameter img {
+  width: 50px;
+  height: 50px;
+}
+
+.errorContainer img {
+  max-width: 250px;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #2f4f4f;
+  color: white;
+  font-weight: bold;
+  margin-top: 17px;
+}

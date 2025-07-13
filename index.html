@@ -1,0 +1,87 @@
+<html>
+    <title>Weather Forcast</title>
+    <head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    </head>
+<body>
+    <!-- wrapper -->
+    <div class="wrapper">
+        <h1>Weather Forcasting</h1>
+        <div class="tabContainer">
+            <p class="tab currentTab" data-userWeather>Your Weather</p>
+            <P class="tab" data-searchWeather>Search Weather</P>
+        </div>
+
+     <!-- container -->
+       <div class="container">
+           <!-- search container -->
+            <form class="formContainer" data-searchForm>
+                <input type="text" placeholder="Search for city....." data-searchInput>
+                <button class="btn" type="submit">
+                    <i class="bi bi-search"></i>
+                </button>
+            </form>
+            
+        <!-- Grant location access -->
+         <div class="grantLocationContainer subContainer">
+            <img src="C:\Users\HP\Downloads\location.png"width="80" height="80" loading="lazy">
+            <p>Grant Location Access</p>
+            <p> Allow access to get weather information</p>
+            <button class="btn" data-grantAccess>Grant Access</button>
+         </div>
+
+         <div class="subContainer loadingContainer">
+            <img src="C:\Users\HP\Downloads\loading.gif" width="150" height="150">
+            <p>Loading</p>
+         </div>
+
+         <!-- Weather information -->
+        <div class="userInfoContainer subContainer t">
+            <div class="name">
+                <p data-cityName></p>
+                <img data-countryFlag>
+            </div>
+
+            <p data-weatherDesc></p>
+            <img data-weatherIcon>
+
+            <p data-temp></p>
+
+            <div class="parameterContainer">
+                <!-- Wind Speed -->
+                 <div class="parameter">
+                    <img src="C:\Users\HP\Downloads\wind.png" alt="#">
+                    <p>Windspeed</p>
+                    <p class="parameterValue" data-windspeed></p>
+                 </div>
+
+                 <!-- Humidity -->
+                  <div class="parameter">
+                    <img src="C:\Users\HP\Downloads\humidity.png" alt="#">
+                    <p>Humidity</p>
+                    <p class="parameterValue" data-humidity></p>
+                  </div>
+
+                  <!-- Wind Speed -->
+                 <div class="parameter">
+                    <img src="C:\Users\HP\Downloads\cloud.png" alt="#">
+                    <p>clouds</p>
+                    <p class="parameterValue" data-clouds></p>
+                 </div>
+            </div>
+        </div>
+
+        <!-- Location Not Found -->
+         <div class="errorContainer subContainer">
+            <img src="E:\javascript\error1.jpg" alt="" data-errorImg>
+            <p data-errorText></p>
+            <button class="btn" data-errorBtn>Retry Again</button>
+         </div>
+      </div>
+     </div>
+</body>
+</html>
+
